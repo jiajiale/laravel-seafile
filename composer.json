@@ -1,0 +1,32 @@
+{
+    "name": "jiajiale/laravel-seafile",
+    "description": "laravel-seafile",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "'xiaj'",
+            "email": "xiaj@lierda.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jiajiale\\LaravelSeafile\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jiajiale\\LaravelSeafile\\SeafileServiceProvider"
+            ],
+            "aliases": {
+                "Seafile": "Jiajiale\\LaravelSeafile\\Facades\\Seafile"
+            }
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "nabil1337/case-helper": "~0.1",
+        "ext-json": "*",
+        "sdo/bitmask": "^1.0"
+    }
+}
