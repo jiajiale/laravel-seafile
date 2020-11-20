@@ -35,7 +35,6 @@ class Seafile
     public function getClient(){
         $token = Cache::get("seafile:token");
         if(!$token){
-            var_dump("aaaaaa");
             $authResource = new Auth(new Client([
                 'base_uri' => $this->baseUri,
             ]));
